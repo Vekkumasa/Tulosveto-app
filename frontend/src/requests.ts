@@ -3,7 +3,6 @@ import Constants from 'expo-constants';
 import { Response } from './types';
 
 const Request = async () => { 
-//  Constants.manifest?.extra && console.log('request', Constants.manifest?.extra.x_rapidapi_key);
   if (Constants.manifest?.extra) {
     const options: AxiosRequestConfig = {
       method: 'GET',

@@ -28,6 +28,7 @@ export default {
     favicon: "./assets/favicon.png"
   },
   extra: {
-    x_rapidapi_key: process.env.API_KEY
+    x_rapidapi_key: process.env.API_KEY,
+    apollo_uri: process.env.APOLLO_URI
   }
 };
