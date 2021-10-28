@@ -23,7 +23,7 @@ const Matches = () => {
   useEffect(() => {
     const response = request();
     void response.then((res) => {
-      setMatches(res.response);
+      res && setMatches(res.response);
     });
   }, []);
 

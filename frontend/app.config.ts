@@ -5,9 +5,9 @@ export default {
   slug: "tulosveto-app",
   version: "1.0.0",
   orientation: "portrait",
-  icon: "./assets/icon.png",
+  icon: "",
   splash: {
-    image: "./assets/splash.png",
+    image: "",
     resizeMode: "contain",
     backgroundColor: "#ffffff"
   },
@@ -20,7 +20,7 @@ export default {
   },
   android: {
     adaptiveIcon: {
-      foregroundImage: "./assets/adaptive-icon.png",
+      foregroundImage: "",
       backgroundColor: "#FFFFFF"
     }
   },

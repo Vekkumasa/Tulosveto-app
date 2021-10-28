@@ -4,6 +4,8 @@ import { ApolloProvider } from '@apollo/client';
 import Constants from 'expo-constants';
 import createApolloClient from './src/utils/ApolloClient';
 
+import { StatusBar } from 'expo-status-bar';
+
 import Main from './src/components/Main';
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
@@ -12,11 +14,14 @@ const apolloClient = createApolloClient(Constants.manifest?.extra?.apollo_uri);
 export default () => {
 
   return (
-    <NativeRouter>
-      <ApolloProvider client={apolloClient}>
-        <Main />
-      </ApolloProvider>
-    </NativeRouter>
+    <>
+      <NativeRouter>
+        <ApolloProvider client={apolloClient}>
+          <Main />
+        </ApolloProvider>
+      </NativeRouter>
+      <StatusBar style="auto" />
+    </>
   );
 };
 

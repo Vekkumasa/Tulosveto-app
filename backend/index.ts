@@ -5,4 +5,4 @@ import typeDefs from './type-defs';
 const server = new ApolloServer({ resolvers, typeDefs });
 
 void server.listen()
-  .then(( { url }) => console.log(`Server ready at ${url}`));
+  .then(( { url } ) => console.log(`Server ready at ${url}`));
